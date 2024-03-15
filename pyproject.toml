@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "web-hw-14"
+version = "0.1.0"
+description = ""
+authors = ["Mariia Bulavina"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.27"
+fastapi = "^0.110.0"
+alembic = "^1.13.1"
+uvicorn = "^0.27.1"
+psycopg2-binary = "^2.9.9"
+email-validator = "^2.1.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.9"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.4.1"
+python-dotenv = "^1.0.1"
+redis = "^5.0.2"
+fastapi-limiter = "^0.1.6"
+cloudinary = "^1.39.0"
+pydantic = {version = "^2.6.1", extras = ["email"]}
+pydantic-settings = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
