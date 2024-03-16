@@ -108,16 +108,16 @@ class Auth:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Could not validate credentials')
 
     async def get_current_user(self, token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
-    #    """
-    #     The get_current_user function is a dependency that will be used in the
-    #         protected endpoints. It takes a token as an argument and returns the user
-    #         object if it exists, otherwise it raises an exception.
+        """
+        The get_current_user function is a dependency that will be used in the
+            protected endpoints. It takes a token as an argument and returns the user
+            object if it exists, otherwise it raises an exception.
 
-    #     :param self: The instance of the class
-    #     :param token: str: Token from the request header
-    #     :param db: Connection to the database
-    #     :return: The user object
-    #     """
+        :param self: The instance of the class
+        :param token: str: Token from the request header
+        :param db: Connection to the database
+        :return: The user object
+        """
         credentials_exception = HTTPException(  
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail='Could not validate credentials',
