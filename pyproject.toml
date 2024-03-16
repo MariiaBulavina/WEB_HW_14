@@ -24,6 +24,8 @@ fastapi-limiter = "^0.1.6"
 cloudinary = "^1.39.0"
 pydantic = {version = "^2.6.1", extras = ["email"]}
 pydantic-settings = "^2.2.0"
+pytest = "^8.0.2"
+httpx = "^0.27.0"
 
 
 [tool.poetry.group.dev.dependencies]
